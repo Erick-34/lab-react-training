@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 import Card from './Components/Card/Card';
+import Greetings from './Components/Greetings/Greetings';
+import Random from './Components/Random/Random';
 
 function App() {
   return (
@@ -23,7 +25,20 @@ function App() {
         height={172}
         birth={new Date('1988-05-11')}
       />
-      
+      <p>
+        <strong>
+          -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </strong>
+      </p>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
+      <p>
+        <strong>
+          -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </strong>
+      </p>
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
     </div>
   );
 }

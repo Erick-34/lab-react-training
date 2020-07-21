@@ -18,11 +18,11 @@ function Card(props) {
         <span>{props.gender}</span>
       </div>
       <div classname="height">
-        <label><strong>Height :</strong></label>
-        <span>{props.height}</span>
+        <label><strong>Height: </strong></label>
+        <span>{props.height / 100}m</span>
       </div>
       <div classname="birth">
-        <label><strong>Birth :</strong></label>
+        <label><strong>Birth: </strong></label>
         <span>{props.birth.toDateString()}</span>
       </div>
     </div>
